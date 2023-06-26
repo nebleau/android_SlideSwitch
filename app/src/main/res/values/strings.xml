@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SlideSwitch</string>
+    <string name="slideOn">Recording</string>
+    <string name="slideOff">Pausing</string>
+</resources>

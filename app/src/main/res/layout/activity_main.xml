@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--We are going to use linearlayout for this application-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Instead of simple ToggleButton i will be using SwitchCompat
+     because it has backward API compatibility. Here track and thumb are
+     called. when ToggleButton is turned on it will display "on" and
+     when it is turned off it will display "off".-->
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/slideSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:height="70dp"
+        android:clickable="false"
+        android:thumb="@drawable/baseline_play_circle_48"
+        app:switchMinWidth="230dp"
+        app:track="@drawable/custom_track" />
+
+    <TextView
+        android:id="@+id/trackText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="@string/slideOff"
+        android:textSize="24sp" />
+</FrameLayout>
